@@ -11,29 +11,31 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
 `;
 
 const Left = styled.div`
   flex: 1;
   display: flex;
   align-items: center;
-`
+`;
 
 const Language = styled.span`
-    font-size: 14px;
-    cursor: pointer;
-`
+  font-size: 14px;
+  cursor: pointer;
 
+`
 const SearchContainer = styled.div`
-    border: 0.5px solid lightgray;
-    display: flex;
-    align-items: center;
-    margin-left: 25px;
-    padding: 5px;
+  border: 0.5px solid lightgray;
+  display: flex;
+  align-items: center;
+  margin-left: 25px;
+  padding: 5px;
 `
 const Input = styled.input`
-    border: none;
+  border: none;
 `
+
 
 const Center = styled.div`
   flex: 1;
@@ -41,10 +43,12 @@ const Center = styled.div`
 `;
 
 const Logo = styled.h1`
-    font-weight: bold;   
+  font-weight: bold;
 `
+
+
 const Right = styled.div`
-    flex; 1;
+  flex: 1;
 `;
 
 const Navbar = () => {
@@ -52,14 +56,17 @@ const Navbar = () => {
     <Container>
       <Wrapper>
         <Left>
-            <Language>EN</Language>
-            <SearchContainer>
-                <Input></Input>
-            <SearchIcon/>
-            </SearchContainer>
+          <Language>EN</Language>
+          <SearchContainer>
+            <Input></Input>
+            <SearchIcon></SearchIcon>
+          </SearchContainer>
         </Left>
         <Center>
-            <Logo>Jobayer</Logo>
+          <Logo>
+            Jobayer
+          </Logo>
+
         </Center>
         <Right>Right</Right>
       </Wrapper>
